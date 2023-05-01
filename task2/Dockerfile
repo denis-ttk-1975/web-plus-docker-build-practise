@@ -2,6 +2,6 @@ FROM node:16-alpine
 
 WORKDIR /home/ilovedocker/app
 
-COPY hello.sh ./
+COPY . .
 
 ENTRYPOINT sh hello.sh
