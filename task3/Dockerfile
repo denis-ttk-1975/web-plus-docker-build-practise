@@ -2,7 +2,7 @@ FROM node:16-alpine
 
 WORKDIR /home/ilovedocker/app
 
-COPY package*.json ./
+COPY ./packages/package*.json ./
 # Флаг --omit=dev означает - "не ставить devDependencies"
 # они не нужны нам в продакшен-окружении
 RUN npm i --omit=dev
